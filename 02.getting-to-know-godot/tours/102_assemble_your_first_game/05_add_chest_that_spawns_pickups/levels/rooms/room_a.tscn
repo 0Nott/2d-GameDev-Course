@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cu2rb5dl4ljte"]
 
-[ext_resource type="PackedScene" uid="uid://bupkynq73ufaa" path="res://levels/base_room.tscn" id="1_plgur"]
+[ext_resource type="PackedScene" uid="uid://bupkynq73ufaa" path="res://levels/rooms/base_room.tscn" id="1_plgur"]
 
 [node name="RoomA" instance=ExtResource("1_plgur")]
 rotation = -0.00114604

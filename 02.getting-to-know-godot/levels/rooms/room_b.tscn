@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://dgayuh42w4v6u"]
 
-[ext_resource type="PackedScene" uid="uid://bupkynq73ufaa" path="res://levels/base_room.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://bupkynq73ufaa" path="res://levels/rooms/base_room.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://bl7fmqsn8uu8h" path="res://levels/props/books_3.png" id="2"]
 [ext_resource type="PackedScene" uid="uid://dmy8a66tdnvkh" path="res://levels/rooms/entrances/vertical_room_entrance.tscn" id="3"]
 [ext_resource type="Texture2D" uid="uid://cemsu0d7gpb1d" path="res://levels/props/statue_hammer.png" id="4"]

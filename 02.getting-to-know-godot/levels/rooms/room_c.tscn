@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cq0mmphkbrvmm"]
 
-[ext_resource type="PackedScene" uid="uid://bupkynq73ufaa" path="res://levels/base_room.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://bupkynq73ufaa" path="res://levels/rooms/base_room.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://cncfew4k5q8jk" path="res://levels/props/statue_ruin.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://c1cch51fhbxi8" path="res://levels/props/rocks_sword.png" id="4"]
 
