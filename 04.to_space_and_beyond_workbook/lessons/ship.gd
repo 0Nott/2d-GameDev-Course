@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 		
 	if Input.is_action_just_pressed("boost"):
 		max_speed = boost_speed
-		get_node("timer").start()
+		get_node("Timer").start()
 		
 	velocity = direction * max_speed
 	position += velocity * delta
