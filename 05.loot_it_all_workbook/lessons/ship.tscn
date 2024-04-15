@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmv50krf4bo5r"]
+[gd_scene load_steps=6 format=3 uid="uid://dmv50krf4bo5r"]
 
 [ext_resource type="Texture2D" uid="uid://bniyrxn3r2v8h" path="res://assets/ship.png" id="3_pdppw"]
 [ext_resource type="Script" path="res://lessons/ship.gd" id="4_p1sls"]
 [ext_resource type="PackedScene" uid="uid://dgf54k70yiiff" path="res://assets/ship_visual_effects/main_thruster/main_thruster.tscn" id="5_q7c3l"]
 [ext_resource type="PackedScene" uid="uid://bklom8bhpxg4h" path="res://assets/ship_visual_effects/side_thruster/side_thruster.tscn" id="6_1updt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tt746"]
+radius = 45.0111
 
 [node name="Sprite2D" type="Sprite2D"]
 texture = ExtResource("3_pdppw")
@@ -20,3 +23,6 @@ rotation = 1.74987
 [node name="SideThruster2" parent="." instance=ExtResource("6_1updt")]
 position = Vector2(-45, 19)
 rotation = 1.36715
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_tt746")
