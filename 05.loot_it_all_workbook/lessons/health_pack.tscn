@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5xygnxo6ucwk"]
+[gd_scene load_steps=4 format=3 uid="uid://bapuusyxkms1g"]
 
 [ext_resource type="Texture2D" uid="uid://dknpi2mq4dhpa" path="res://assets/health_icon.svg" id="1_ckexj"]
 [ext_resource type="Script" path="res://lessons/Item.gd" id="1_fc7i7"]

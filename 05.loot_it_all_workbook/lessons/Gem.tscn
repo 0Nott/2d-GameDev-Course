@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bath2w6y31s7h"]
+[gd_scene load_steps=4 format=3 uid="uid://bq6bqwankupdf"]
 
 [ext_resource type="Script" path="res://lessons/Item.gd" id="1_oqx6n"]
 [ext_resource type="Texture2D" uid="uid://d0bh8am2qd005" path="res://assets/gem_icon.png" id="2_luv65"]
