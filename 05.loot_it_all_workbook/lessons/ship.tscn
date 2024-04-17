@@ -63,7 +63,7 @@ position = Vector2(-44, 54)
 scale = Vector2(0.612903, 0.714286)
 texture = ExtResource("5_njn4h")
 
-[node name="Label" type="Label" parent="UI"]
+[node name="GemCount" type="Label" parent="UI"]
 layout_mode = 0
 offset_left = -32.0
 offset_top = 53.0

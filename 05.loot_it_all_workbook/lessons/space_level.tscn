@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dmv50krf4bo5r" path="res://lessons/ship.tscn" id="2_2j1u5"]
 [ext_resource type="PackedScene" uid="uid://bxfevggvxo634" path="res://assets/background/space_background.tscn" id="3_e6xy1"]
-[ext_resource type="PackedScene" path="res://lessons/health_pack.tscn" id="3_n1cgj"]
-[ext_resource type="PackedScene" path="res://lessons/Gem.tscn" id="4_0gpt6"]
+[ext_resource type="PackedScene" uid="uid://bapuusyxkms1g" path="res://lessons/health_pack.tscn" id="3_n1cgj"]
+[ext_resource type="PackedScene" uid="uid://bq6bqwankupdf" path="res://lessons/Gem.tscn" id="4_0gpt6"]
 
 [node name="Level" type="Node2D"]
 

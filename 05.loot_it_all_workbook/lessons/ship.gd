@@ -41,7 +41,7 @@ func set_health(new_health: int) -> void:
 
 
 func _on_area_entered(area_that_entered: Area2D) -> void:
-	if area_that_entered.is_in_group("gem"):
+	if area_that_entered.is_in_group("Gem"):
 		set_gem_count(gem_count + 1)
-	elif area_that_entered.is_in_group("healing_item"):
+	elif area_that_entered.is_in_group("Healing_item"):
 		set_health(health + 10)
