@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cgrm2k2talld8"]
+
+[node name="RandomItemPlacer" type="Node2D"]
+
+[node name="Timer" type="Timer" parent="."]
