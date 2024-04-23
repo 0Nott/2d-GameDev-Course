@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6csdrwndlhlv"]
+
+[ext_resource type="PackedScene" path="res://practices/L6.P1.create_coins/ship_create_coins.tscn" id="1_x2knq"]
+[ext_resource type="PackedScene" uid="uid://dwsnca5kg53jc" path="res://practices/L6.P1.create_coins/coin.tscn" id="2_dhtli"]
+
+[node name="CreateCoins" type="Node2D"]
+
+[node name="Ship" parent="." instance=ExtResource("1_x2knq")]
+position = Vector2(973, 541)
+
+[node name="ExtraVisuals" type="Node" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="ExtraVisuals"]
+position = Vector2(960, 540)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="ExtraVisuals"]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="ExtraVisuals/CanvasLayer"]
+z_index = -3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.219608, 0.317647, 0.776471, 1)
+
+[node name="Coin" parent="." instance=ExtResource("2_dhtli")]
+position = Vector2(472, 731)
+
+[node name="Coin2" parent="." instance=ExtResource("2_dhtli")]
+position = Vector2(1425, 712)
+
+[node name="Coin3" parent="." instance=ExtResource("2_dhtli")]
+position = Vector2(485, 291)
+
+[node name="Coin4" parent="." instance=ExtResource("2_dhtli")]
+position = Vector2(1477, 261)
