@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bf8m1xd74eifl"]
+[gd_scene load_steps=11 format=3 uid="uid://bf8m1xd74eifl"]
 
 [ext_resource type="Script" path="res://lessons/chest/chest.gd" id="1_8lipm"]
 [ext_resource type="Texture2D" uid="uid://c3hwsm5ugp8qw" path="res://lessons/chest/bottom.png" id="1_x1bvk"]
@@ -15,6 +15,42 @@ shader = ExtResource("2_gkywt")
 shader_parameter/line_color = Color(0, 0, 0, 1)
 shader_parameter/line_thickness = 8.0
 shader_parameter/viewport_scale = Vector2(1, 1)
+
+[sub_resource type="Animation" id="Animation_w4o75"]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasGroup/Top:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -35), Vector2(53, -93), Vector2(97, 47)]
+}
+
+[sub_resource type="Animation" id="Animation_mnfaw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasGroup/Top:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -35)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u8cnv"]
+_data = {
+"RESET": SubResource("Animation_mnfaw"),
+"open": SubResource("Animation_w4o75")
+}
 
 [node name="Chest" type="Area2D"]
 position = Vector2(565, 394)
@@ -39,3 +75,8 @@ texture = ExtResource("2_ohx2a")
 [node name="Lock" type="Sprite2D" parent="CanvasGroup"]
 position = Vector2(0, -13)
 texture = ExtResource("3_3odbt")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_u8cnv")
+}
