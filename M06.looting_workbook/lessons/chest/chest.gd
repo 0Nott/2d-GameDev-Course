@@ -68,3 +68,14 @@ func open() -> void:
 		
 	input_pickable = false
 	animation_player.play("open")
+	
+	for current_index in range(randi_range(1, 3)):
+		_spawn_random_item()
+		
+@export var possible_item: Array[PackedScene] = []
+
+func _spawn_random_item() -> void:
+	var loot_item: Area2D = possible_item.pick_random().instantiate
+	add_child(loot_item)
+	var random_angle := randf_range(0.0, 2.0 * PI)
+	var random_direction := Vector2(1.0, 0.0).rotated(random_angle)
