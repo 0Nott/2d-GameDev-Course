@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dnetm54guji21" path="res://assets/bird/shadow.tscn" id="3_qwtkp"]
 
 [node name="bird" type="Node2D"]
+position = Vector2(202, 120)
 script = ExtResource("1_3ofwq")
 
 [node name="bird" type="Sprite2D" parent="."]

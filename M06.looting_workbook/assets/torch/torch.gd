@@ -41,7 +41,7 @@ func _ready() -> void:
 	flame.material.set("shader_parameter/offset", global_position * 0.1)
 
 
-func _input_event(viewport: Viewport, event: InputEvent, shape_idx: int) -> void:
+func _input_event(_viewport: Viewport, event: InputEvent, _shape_idx: int) -> void:
 	var is_mouse_pressed: bool = (
 		event is InputEventMouseButton and
 		event.pressed and

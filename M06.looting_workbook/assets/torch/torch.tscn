@@ -33,6 +33,7 @@ radius = 9.0
 height = 48.0
 
 [node name="Torch" type="Area2D"]
+position = Vector2(555, 266)
 script = ExtResource("1_8rman")
 
 [node name="TorchBody" type="Sprite2D" parent="."]

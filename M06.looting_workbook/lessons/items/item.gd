@@ -5,7 +5,7 @@ extends Area2D
 func _ready() -> void:
 	play_floating_animation()
 
-func _input_event(viewport: Viewport, event: InputEvent, shape_idx: int) -> void:
+func _input_event(_viewport: Viewport, event: InputEvent, _shape_idx: int) -> void:
 	var event_is_mouse_click: bool = (
 		event is InputEventMouseButton and
 		event.button_index == MOUSE_BUTTON_LEFT and
