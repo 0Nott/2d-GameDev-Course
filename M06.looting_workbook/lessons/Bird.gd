@@ -38,7 +38,7 @@
 extends Node2D
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
-@onready var wait_timer: Timer = $WaitTimer
+@onready var wait_timer = $WaitTimer
 @onready var shadow: Sprite2D = $Shadow
 
 
@@ -51,7 +51,6 @@ func _ready() -> void:
 	wait_timer.start()
 
 
-## Animates the bird hopping and moving to a random position.
 func _animate_one_hop() -> void:
 	# The duration of a single hop in seconds. We use it to calculate the duration of the entire hop animation.
 	const HOP_DURATION := 0.25

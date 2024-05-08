@@ -8,7 +8,10 @@
 position = Vector2(202, 120)
 script = ExtResource("1_3ofwq")
 
-[node name="bird" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_jg1fe")
 
 [node name="Shadow" parent="." instance=ExtResource("3_qwtkp")]
+position = Vector2(-6, 19)
+
+[node name="WaitTimer" type="Timer" parent="."]
